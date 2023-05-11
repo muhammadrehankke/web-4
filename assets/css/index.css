@@ -1,0 +1,322 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    padding: 30px 0px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo img {
+    width: 150px;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav li {
+    padding: 0px 20px;
+}
+
+nav a {
+    color: white;
+}
+
+nav li::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 3px;
+    background-color: #121ecc;
+    transition: all ease-out .3s;
+}
+
+nav li:hover::after {
+    width: 100%;
+}
+
+.banner-section {
+    background-image: url(../images/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    background-blend-mode: overlay;
+    background-color: rgba(30, 51, 59, 0.411);
+}
+
+.banner-text-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.banner-text-content {
+    max-width: 900px;
+    text-align: center;
+}
+
+.banner-text {
+    padding: 0px 20px;
+}
+
+.banner-text h1 {
+    font-size: 63px;
+    text-align: center;
+    color: white;
+}
+
+.banner-text p {
+    text-align-last: center;
+    font-size: 15px;
+    margin: 10px 0 40px 20px;
+    color: white;
+}
+
+.btn {
+    border: 1px solid white;
+    padding: 15px 35px;
+    display: inline-block;
+    margin: 0px auto;
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.btn:hover {
+    background-color: #17b5bb65;
+    transition: all .3s;
+    color: white;
+}
+
+.course-section {
+    padding: 80px 0px 150px 0px;
+    background-color: #eee;
+}
+
+.course-text {
+    text-align: center;
+}
+
+.course-text h2 {
+    font-size: 48px;
+}
+
+.course-text p {
+    font-size: 14px;
+    margin: 0px 0px 60px 0px;
+}
+
+.course-row {
+    display: flex;
+    margin: 0px -15px;
+}
+
+.course-col {
+    padding: 0px 15px;
+    flex: 0 0 33.333%;
+
+}
+
+.course-content {
+    background: rgba(253, 212, 219, 0.856);
+    padding: 27px;
+    text-align: center;
+    color: rgb(105, 101, 101);
+    transition: all .3s;
+    border-radius: 5px;
+}
+
+.course-content h3 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.course-content p {
+    font-size: 14px;
+}
+
+.course-content:hover {
+    box-shadow: 3px 3px 7px grey, -3px -3px 7px grey;
+}
+
+.campus-section {
+    padding: 110px 0px;
+    background-color: aliceblue;
+}
+
+.campus-row {
+    display: flex;
+    margin: 0px -15px;
+}
+
+.campus-col {
+    flex: 0 0 32%;
+    padding: 0px 15px;
+}
+
+.campus-img {
+    position: relative;
+}
+
+
+.campus-img img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+
+}
+
+.layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 99%;
+    transition: all .4s;
+    overflow: hidden;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.layer:hover {
+    background-color: rgba(175, 17, 17, 0.719);
+}
+
+.layer h3 {
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    opacity: 0;
+    transition: all .4s;
+    font-size: 26px;
+    color: rgb(223, 206, 206);
+}
+
+.layer:hover h3 {
+    bottom: 45%;
+    opacity: 1;
+}
+
+.facilities-section {
+    padding: 100px 0px;
+}
+
+
+.facilities-row {
+    display: flex;
+    margin: 0px -15px;
+}
+
+.facilities-col {
+    flex: 0 0 33.333%;
+    padding: 0px 15px;
+}
+
+.facilities-content img {
+    width: 100%;
+    display: block;
+    border-radius: 15px;
+}
+
+.facilities-text {
+    padding: 15px 10px;
+}
+
+
+.facilities-text h3 {
+    margin-bottom: 10px;
+}
+
+.facilities-text p {
+    font-size: 14px;
+}
+
+.footer-sec {
+    padding: 87px 0px;
+    background: #eee;
+    font-family: 'Raleway', sans-serif;
+}
+
+.footer-row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-col-1 {
+    flex: 0 0 45%;
+    margin: 0 -89px;
+}
+
+.footer-col-1 p {
+    padding: 14px 93px;
+    line-height: 25px;
+}
+
+.footer-col-1 h3 {
+    padding: 10px 90px;
+}
+
+.footer-col-2 {
+    flex: 0 0 15%;
+    margin: 0 -100px;
+}
+
+.footer-col-2 ul {
+    margin-top: 20px;
+}
+
+.footer-col-2 h3 {
+    padding: 10px 0px;
+}
+
+.footer-col-2 li {
+    padding: 4px 0px;
+}
+
+.footer-col-2 a {
+    color: black;
+}

@@ -1,0 +1,236 @@
+@media (max-width:1365px) {
+    .container {
+        max-width: 1140px;
+        padding: 0px 20px;
+    }
+}
+
+@media (max-width:1199px) {
+    .container {
+        max-width: 960px;
+        padding: 0px 20px;
+    }
+
+    .banner-text h1 {
+        font-size: 55px;
+    }
+
+    .footer-col-2 ul {
+        margin-top: 6px;
+    }
+
+    .footer-col-2 {
+        margin: 0 -20px;
+    }
+
+    .footer-col-1 p {
+        padding: 19px 93px 14px 93px;
+    }
+
+}
+
+@media (max-width:991px) {
+    .container {
+        max-width: 720px;
+        padding: 0px 20px;
+    }
+
+    nav ul {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: rgba(7, 34, 44, 0.788);
+        height: 0;
+        transition: all 0.4s;
+        flex-direction: column;
+        overflow: hidden;
+
+    }
+
+    nav ul.actives {
+        height: 350px;
+    }
+
+    nav li {
+        text-align: center;
+        padding-left: 0;
+        margin-top: 36px;
+
+    }
+
+    .humburger {
+        position: absolute;
+        right: 37px;
+        bottom: 45px;
+        display: block;
+        cursor: pointer;
+    }
+
+    .humburger .line {
+        width: 28px;
+        height: 4px;
+        margin: 5px;
+        background: skyblue;
+
+    }
+
+    nav li:hover::after {
+        width: 104%;
+    }
+
+    .banner-text h1 {
+        font-size: 48px;
+    }
+
+    .banner-text {
+        padding: 0px 21px;
+    }
+
+    .course-row {
+        flex-wrap: wrap;
+    }
+
+    .course-col {
+        flex: 0 0 50%;
+        margin-top: 20px;
+    }
+
+    .course-section {
+        padding: 37px 0px 93px 0px;
+    }
+
+    .course-text p {
+        margin-bottom: 20px;
+    }
+
+    .campus-section {
+        padding: 45px 0px;
+    }
+
+    .campus-row {
+        flex-wrap: wrap;
+    }
+
+    .campus-col {
+        flex: 0 0 50%;
+        margin-top: 20px;
+    }
+
+    .facilities-section {
+        padding: 40px 0px;
+    }
+
+    .facilities-row {
+        flex-wrap: wrap;
+    }
+
+    .facilities-col {
+        flex: 0 0 50%;
+        margin-top: 20px;
+    }
+
+    .footer-col-1 {
+        flex: 0 0 50%;
+        margin: 0px -45px;
+    }
+
+    .footer-col-1 p {
+        padding: 0px 50px;
+    }
+
+    .footer-col-1 h3 {
+        padding: 10px 50px;
+    }
+
+    .footer-col-2 {
+        flex: 0 0 15%;
+        margin: 0 -43px;
+    }
+
+}
+
+@media (max-width:767px) {
+    .container {
+        max-width: 540px;
+        padding: 0px 20px
+    }
+
+    .banner-text h1 {
+        font-size: 45px;
+    }
+
+    .banner-text {
+        padding: 0px 27px;
+    }
+
+    .footer-col-1 {
+        margin: 0px -45px 23px -51px;
+    }
+
+    .footer-row {
+        align-items: flex-start;
+    }
+
+    .footer-col-2 {
+        margin: 0 -2px;
+        flex: 0 0 50%;
+    }
+
+}
+
+@media (max-width:575px) {
+    .container {
+        max-width: 100%;
+        padding: 0px 20px;
+    }
+
+    .banner-text h1 {
+        font-size: 38px;
+    }
+
+    .banner-text {
+        padding: 0;
+    }
+
+    .banner-text p {
+        font-size: 13px;
+        margin: 10px 0 40px 0px;
+    }
+
+    .btn {
+        padding: 11px 25px;
+        font-size: 16px;
+    }
+
+    .course-text h2 {
+        font-size: 35px;
+    }
+
+    .course-col {
+        flex: 0 0 100%;
+    }
+
+    .course-text h2 {
+        font-size: 29px;
+    }
+
+    .campus-col {
+        flex: 0 0 100%;
+    }
+
+    .facilities-col {
+        flex: 0 0 100%;
+    }
+
+    .footer-col-2 {
+        flex: 0 0 50%;
+        margin: 20px 0px;
+
+    }
+
+    .footer-col-1 {
+        flex: 0 0 100%;
+    }
+
+}
